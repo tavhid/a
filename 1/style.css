@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  max-height: none;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  height: 100vh;
+  width: 99vw;
+  background-image: url("images/bg1.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.headerContainer{
+  width: 99vw;
+  min-height: 76px;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content:space-around;
+  transition: .5s;
+}
+.navigationLink{
+  transition: .3s
+}
+.navigationLink:hover{
+  color: #02bc58;
+  transition: .3s;
+}
+.logo{
+  width: 20vw;
+  height: 76px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo > img{
+  width: 50px;
+  height: 50px;
+}
+.scrolled{
+  background: #000;
+  transition: .5s;
+}
+nav > ul{
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.about{
+  width: 99vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px;
+}
+.mainText{
+  width: 40vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 30px;
+  text-align: center;
+}
+.mainText > h1{
+  letter-spacing: 5px;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-transform: uppercase;
+}
+.aboutContent{
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutPhotos{
+  width: 50%;
+  height: 70%;
+  background-image: url("images/about1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.aboutPhotos > img{
+  width: 50%;
+  height: 50%;
+  border: 10px solid #fff;
+  border-radius: 3px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.aboutText{
+  width: 44%;
+  height: 65%;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.aboutContinue{
+  width: 100%;
+  height: 35vh;
+  background-image: url("images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutIcons{
+  width: 70%;
+  height: 60%;
+  border: 1px solid red;
+}
+.tours {
+  width: 100%;
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px;
+  margin-bottom: 100px;
+}
+.toursContent{
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+}
+.tour{
+  width: 26%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px;
+  margin-bottom: 50px;
+}
+.tourPhoto{
+  width: 100%;
+  height: 50%;
+}
+.tourPhoto > img{
+  width: 100%;
+  height: 100%;
+}
+.tourInformation{
+  width: 100%;
+  heig5ht: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 35px;
+  justify-content: space-around;
+}
+.tourInformationNames{
+  width: 40%;
+}
+.tourInformationValues{
+  width: 40%;
+  text-align: right;
+}
+.tourInformationNames > p:first-child, .tourInformationValues > p:first-child{
+  font-weight: bold;
+}
+.tourButton{
+  width: 150px;
+  height: 100%;
+  border: 2px solid #02bc58;
+  background: #02bc58;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 10px;
+}
+.tourButton:hover{
+  background: #fff;
+  color: #02bc58;
+}
+.videoContainer{
+  width: 100%;
+  height: 80vh;
+  background: #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.videoPoster{
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 5px;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+.playIcon{
+  cursor: pointer;
+}
+
+.gallery{
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.galleryContent{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.galleryPhoto{
+  width: calc(100% / 3);
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: .5s all;
+  background: rgb(23,23,23);
+}
+.galleryPhoto img{
+  width: 100%;
+  transform: scale(1.35);
+  transition: .5s all;
+  opacity: 1;
+}
+.galleryPhotoText {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  line-height: 28px;
+  overflow: hidden;
+  color: #fff;
+}
+.galleryCountryName{
+  font-size: 20px;
+  transform: translateY(-25px);
+  opacity: 0;
+  transition: .4s all;
+}
+.galleryCountryDescription{
+  font-size: 15px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: .4s all;
+}
+.galleryPhoto:hover img{
+  transform: scale(1.1);
+  opacity: .6;
+}
+.galleryPhoto:hover .galleryCountryName,
+.galleryPhoto:hover .galleryCountryDescription{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.commentsContainer{
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  text-align: center;
+  background: #666;
+  color: white;
+}
+.commentSlider{
+  width: 50%;
+  height: 70%;
+}
+.comment{
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.stars{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+}
+.yellowStar{
+  color: gold;
+}
+.commentContent{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 85%;
+}
+.commentMan{
+  font-weight: bold;
+}
